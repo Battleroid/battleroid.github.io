@@ -18,7 +18,7 @@ Here's some junk you might be interested in as well as other useless facts:
 * You can email at [casey@caseyweed.com][email], optional pgp key [here][pgp]
 * I put projects and snippets on my [github][git]
     * This blog is here at [{{ site.github_username }}/{{ site.github_username }}.github.io][blog]
-* My family owns the best cat in the universe, his name is [Spooky][spooky]
+* My family owned (RIP) the best cat in the universe, his name is [Spooky][spooky]
 * I have my own two idiots --- [(Handsome) Henry & (Wacky) Wilbur][idiots] --- they're great, mostly.
 * For some reason I enjoy writing technical documentation (and I hate Confluence, sorry, but it sucks)
 
