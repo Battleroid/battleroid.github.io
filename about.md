@@ -9,7 +9,7 @@ permalink: /about/
 {: .caption}
 Graduation day with my family
 
-My name is Casey Weed. I graduated from Armstrong State University with my bachelor's in IT and am currently employed at Mailchimp as a Data Engineer on the Search team. I spend much of the day mucking with Kubernetes, the ELK stack, Python, Bash, etc.
+My name is Casey Weed. I graduated from Armstrong State University with my bachelor's in IT and am currently employed at Mailchimp (now owned by Intuit) as a Data Engineer on the Search team. I spend much of the day mucking with Kubernetes, the ELK stack, Python, Bash, etc.
 
 I'm not a writer, so expect my writing to be terrible. Maybe I'll get better if I write more, who knows.
 
