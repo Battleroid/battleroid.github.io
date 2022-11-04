@@ -16,6 +16,12 @@ I'm not a writer, so expect my writing to be terrible. Maybe I'll get better if 
 Here's some junk you might be interested in as well as other useless facts:
 
 * You can email at [casey@caseyweed.com][email], optional pgp key [here][pgp]
+    * <details>
+        <summary>if you're contacting me about a job, please read this little disclaimer first</summary>
+        <p>I work primarily with Elasticsearch, Python and Linux. I utilize Kubernetes, Kafka and a few other technologies and have <i>some</i> experience with GCP. I have no professional expertise with SQL, so just know if your job description contains "expert in SQL" or similar language, I'm probably going to tell you no.</p>
+        <p>I'm a systems & infrastructure kind of person. I like writing scripts, tooling and generally things that have measurable impact on customers' day-to-day life (internal or external). I'm not a business intelligence or data science kind of person.</p>
+        <p>That's all, thanks for reading!</p>
+      </details>
 * I put projects and snippets on my [github][git]
     * This blog is here at [{{ site.github_username }}/{{ site.github_username }}.github.io][blog]
 * My family owned (RIP) the best cat in the universe, his name is [Spooky][spooky]
