@@ -132,8 +132,6 @@ Then the ability to seek out and find any/all nodes that were not attached to an
 
 The documentation around this was improved, and rewritten to demonstrate the new processes. I also took the chance to scour our pools of ES hosts of any derelict nodes, destroying them and lowering the risk of this happening again.
 
----
-
 [es-ksm]: https://github.com/Battleroid/es-ksm
 
 [^1]: We try to keep the names standardized like this as it makes scripts/Rundeck jobs easier to automate if they're all labelled consistently.

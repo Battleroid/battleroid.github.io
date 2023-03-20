@@ -1,28 +1,48 @@
 body {
-    font-family: serif;
-    background: #f3efe2;
+    font-family: sans-serif;
+    line-height: 1.5;
 }
 
 main {
-    max-width: 35em;
-    padding: 1em 3vw 1em;
+    max-width: 70ch;
+    padding: 2em 3vw 2em;
     margin: 0 auto;
 }
 
 nav {
-    display: inline-block;
+    margin-bottom: 2em;
 }
 
-pre, code, ul.posts time {
-    font: 13px monospace;
+nav menu {
+    margin: 0;
+    padding: 0;
+}
+
+nav menu li {
+    display: inline;
+}
+
+nav menu a {
+    background: black;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+pre,
+code {
+    font: 14px monospace;
+    line-height: 1.25;
 }
 
 pre code {
-    padding: 8px;
-    overflow: auto;
+    padding: 8px 16px;
+    overflow-x: auto;
     display: block;
-    background: #111;
-    color: #eee;
+    background: #eee;
+    color: black;
     white-space: pre;
     word-wrap: normal;
 }
@@ -34,48 +54,81 @@ p {
 blockquote {
     quotes: '“' '”';
     font-style: italic;
+    margin: 0;
+    border-left: 8px solid lightgray;
+    background: #eee;
+    padding: 1em 2em;
 }
 
-blockquote p:before {
-    content: '“';
-    content: open-quote;
+blockquote p:first-child {
+    margin: 0;
 }
 
-blockquote p:after {
-    content: '';
-    content: no-close-quote;
+blockquote p:last-child {
+    margin-bottom: 0;
 }
 
-blockquote p:last-child:after {
-    content: '”';
-    content: close-quote;
-}
-
-/* normalize the user agent stylehseet */
-h1, h2, h3, h4, h5, h6 {
+/* normalize the user agent stylehseet a little bit */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 1em 0;
 }
 
-h1 { font-size: 1.5em; }
-h2 { font-size: 1.25em; }
-h3 { font-size: 1em; }
-h4 { font-size: 0.8em; }
-h5 { font-size: 0.6em; }
-h6 { font-size: 0.4em; }
+h1 {
+    font-size: 1.5em;
+}
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 0.8em;
+}
+
+h5 {
+    font-size: 0.6em;
+}
+
+h6 {
+    font-size: 0.4em;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
     text-decoration: none;
     color: black;
 }
 
-header h1 {
-    margin-bottom: 0em;
+/* article related garbage */
+header {
+    margin: 2em 0;
 }
 
-p code, li code, samp, kbd {
-    color: #eee;
-    background: #111;
-    padding: 1px 3px;
+header h1 {
+    margin: 0em;
+    font-size: 2em;
+}
+
+p code,
+li code,
+samp,
+kbd {
+    color: black;
+    background: #eee;
+    padding: 2px 4px;
 }
 
 img {
@@ -86,26 +139,36 @@ img {
 }
 
 article header time {
-    font-style: italic;
     display: inline-block;
-    margin-top: 0em;
 }
 
-ul.posts li div {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+/* posts list stuff */
+ul.posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.posts li {
+    margin-bottom: 0.5em;
+}
+
+ul.posts li:last-child {
+    margin-bottom: 0;
 }
 
 ul.posts a {
-    flex-grow: 2;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 ul.posts time {
-    flex-shrink: 0;
+    display: block;
     padding-right: 0.5em;
 }
 
+/* misc stuff */
 .caption {
     text-align: center;
     font-style: italic;
@@ -114,22 +177,34 @@ ul.posts time {
 }
 
 div.footnotes li:target {
-    background: lemonchiffon;
+    background: lightblue;
 }
 
-sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
+.footnotes {
+    background: #eee;
+    margin-top: 2em;
+    padding: 1em 2em;
+}
+
+.footnotes ol {
+    padding-left: 1em;
+}
+
+sup,
+sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
 }
 
 sub {
-  top: 0.4em;
+    top: 0.4em;
 }
 
-abbr[title], acronym[title] {
+abbr[title],
+acronym[title] {
     text-decoration: none;
-    border-bottom: 1px dashed #333;
+    border-bottom: 1px dashed black;
     cursor: help;
 }
 
@@ -138,14 +213,18 @@ abbr[title], acronym[title] {
         max-width: 100%;
         margin: 0;
     }
+
     pre code {
-        font-size: 11px;
+        font-size: 16px;
         white-space: pre-wrap;
         color: black;
         background: none;
     }
 
-    pre, code, samp, kbd {
+    pre,
+    code,
+    samp,
+    kbd {
         color: black;
     }
 }
@@ -155,7 +234,8 @@ abbr[title], acronym[title] {
     color: #aaa;
 }
 
-.highlight .nf, .highlight .nc {
+.highlight .nf,
+.highlight .nc {
     font-weight: bold;
 }
 

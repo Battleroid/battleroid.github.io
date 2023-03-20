@@ -3,14 +3,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if page.id %}<meta name="author" content="{{ page.author }}">{% endif -%}
-    {% if page.id %}<meta name="date" content="{{ page.date | date_to_iso8601 }}">{% endif %}
-    {% if page.id %}<meta name="description" content="{{ page.excerpt | strip_html | strip | normalize_whitespace | truncatewords: 50 }}">{% endif %}
+    {% if page.id %}
+    <meta name="author" content="{{ page.author }}">{% endif -%}
+    {% if page.id %}
+    <meta name="date" content="{{ page.date | date_to_iso8601 }}">{% endif %}
+    {% if page.id %}
+    <meta name="description"
+        content="{{ page.excerpt | strip_html | strip | normalize_whitespace | truncatewords: 50 }}">{% endif %}
 
     <!-- misc -->
     <link rel="me" href="mailto:{{ site.email }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="icon" type="image/png" href="{{ "/assets/favicon.png" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ " /css/main.css" | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" href="{{ " /assets/favicon.png" | prepend: site.baseurl }}">
 
-    <title>{%- if page.title %}{{ site.title | escape }} - {{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <title>{%- if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 </head>
