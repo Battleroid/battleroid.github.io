@@ -140,7 +140,7 @@ img {
 }
 
 article header time {
-    display: inline-block;
+    display: block;
 }
 
 /* posts list stuff */
@@ -152,22 +152,38 @@ ul.posts {
 
 ul.posts li {
     margin-bottom: 0.5em;
+    display: flex;
+    align-items: baseline;
+    vertical-align: text-top;
 }
 
 ul.posts li:last-child {
     margin-bottom: 0;
 }
 
+ul.posts a, ul.posts time {
+}
+
 ul.posts a {
-    display: block;
     text-decoration: none;
     font-weight: bold;
 }
 
 ul.posts time {
-    display: block;
     padding-right: 0.5em;
+    text-wrap: nowrap;
 }
+
+/* ul.posts .fragment {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.6em;
+    background: #eee;
+    padding: 4px 8px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 0.5em;
+} */
 
 /* misc stuff */
 .caption {
@@ -243,4 +259,15 @@ acronym[title] {
 table {
     width: 100%;
     border-collapse: collapse;
+}
+
+hr {
+    border: none;
+    margin: 2em 0;
+    background: #bbb;
+    height: 2px;
+}
+
+span.explanation {
+    font-size: 0.8em;
 }
