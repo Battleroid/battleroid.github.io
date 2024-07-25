@@ -1,0 +1,34 @@
+digraph pipeline {
+    layout=dot
+    rankdir=LR
+    fontname="Helvetica,Arial,sans-serif"
+	node [fontname="Helvetica,Arial,sans-serif",shape=box]
+	edge [fontname="Helvetica,Arial,sans-serif"]
+
+    subgraph cluster_colo {
+        label="Colo"
+        labeljust="l"
+        
+        subgraph cluster_kubernetes {
+            "Dumper 1" -> S3
+            "Dumper 2" -> S3
+            "Dumper 3" -> S3
+            label="Kubernetes"
+        }
+        "Elasticsearch" -> "Dumper 1"
+        "Elasticsearch" -> "Dumper 2"
+        "Elasticsearch" -> "Dumper 3"
+    }
+
+    subgraph cluster_aws {
+        label="AWS"
+        labeljust="l"
+        
+        S3 -> "Ingestion Lambda"
+        "Ingestion Lambda" -> Opensearch
+        "Ingestion Lambda" -> SQS [label="on error"]
+        SQS -> "DLQ Lambda"
+        S3 -> "DLQ Lambda"
+        "DLQ Lambda" -> "DLQ S3"
+    }
+}
