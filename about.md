@@ -4,12 +4,9 @@ title: About
 permalink: /about/
 ---
 
-![me, graduation day]({{ site.baseurl }}/assets/self.jpg)
+![me]({{ site.baseurl }}/assets/me_2025.jpg)
 
-{: .caption}
-Graduation day with my family
-
-Hello, I'm Casey Weed. I'm a graduate of the now extinct Armstrong State University. I work at Mailchimp (now owned by Intuit) as a Senior Data Engineer on the Search team. I spend most of my time working with the ELK stack, Python and Kubernetes.
+Hello, I'm Casey Weed. I'm a graduate of the now extinct Armstrong State University. I work at Mailchimp (now owned by Intuit) as a Senior Software Engineer on the Observability team. I spend most of my time working with the ELK/OS stack, Python and Kubernetes.
 
 I'm not a writer and I write how I speak, so expect my writing to be terrible unless it's technical documentation.
 
@@ -17,7 +14,7 @@ Here's some junk you might be interested in as well as other useless facts:
 
 * You can email at [casey@caseyweed.com][email]
     * I don't mind job inquiries, but please don't blast me, hit me up if it's relevant.
-* I put projects and snippets on my [github][git]
+* I put projects and snippets on my [github][git] now and then.
     * This blog is here at [{{ site.github_username }}/{{ site.github_username }}.github.io][blog]
 * My family owned (RIP) the best cat in the universe, his name is [Spooky][spooky]
 * I have my own two goobers --- [(Handsome) Henry & (Wacky) Wilbur][idiots] --- they're great, mostly.
