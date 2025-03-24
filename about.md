@@ -21,6 +21,7 @@ Here's some junk you might be interested in as well as other useless facts:
     * This blog is here at [{{ site.github_username }}/{{ site.github_username }}.github.io][blog]
 * My family owned (RIP) the best cat in the universe, his name is [Spooky][spooky]
 * I have my own two goobers --- [(Handsome) Henry & (Wacky) Wilbur][idiots] --- they're great, mostly.
+    * Wilbur unfortunately passed away March 9th, 2025. [Rest in peace, little buddy][wilbur].
 * For some reason I enjoy writing technical documentation (and I hate Confluence, sorry, but it sucks)
 
 [git]: https://github.com/{{ site.github_username }}
@@ -28,4 +29,5 @@ Here's some junk you might be interested in as well as other useless facts:
 [pgp]: {{ site.baseurl }}/assets/pub.key
 [email]: mailto:casey@caseyweed.com
 [idiots]: {{ site.baseurl }}/assets/hb.jpg
+[wilbur]: {{ site.baseurl }}/assets/wilbur.jpg
 [spooky]: {{ site.baseurl }}/assets/spooky.jpg
